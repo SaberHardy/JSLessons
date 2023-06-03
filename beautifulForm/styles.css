@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     display: flex;
-    background: linear-gradient(#94f199, #4e7efc);
+    background: linear-gradient(#94f199, #adadad);
     transition: background 0.5s ease;
     position: relative;
 }
@@ -43,7 +43,7 @@ body {
 .field-finish input,
 .field-password input {
     background: none;
-    border: none ;
+    border: none;
     flex: 1;
     height: 100%;
     outline: none;
@@ -61,7 +61,17 @@ div.active {
     transform: translate(-50%, -50%);
 }
 
-
+@keyframes shake {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
 
 
 
