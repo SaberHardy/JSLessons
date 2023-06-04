@@ -51,7 +51,7 @@ nav {
     height: 1000px;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -10px;
     transform: translateY(-50%);
 }
 
@@ -63,6 +63,8 @@ nav {
     left: 0;
     border-radius: 50%;
     /*background: #ccc;*/
+    transform: rotate(0deg);
+    transition: 1.5s;
 }
 
 .feature img {
@@ -94,18 +96,21 @@ nav {
 .two {
     top: 150px;
     left: 420px;
+    transform: rotate(-90deg);
 }
 
 /*motherboard*/
 .three {
     bottom: 450px;
     left: 50px;
+    transform: rotate(-180deg);
 }
 
 /*processor*/
 .four {
     bottom: 100px;
     left: 420px;
+    transform: rotate(-270deg);
 }
 
 .mobile {
@@ -140,4 +145,16 @@ nav {
 #arrow-down {
     width: 30px;
     cursor: pointer;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #ffffff;
+    border-left: 500px solid #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
