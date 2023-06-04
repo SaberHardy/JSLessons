@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #ef9e6c, #5bd9ad, #0088b2);
+}
+
+nav {
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.information {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    /*background: #ccc;*/
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature {
+    position: absolute;
+    display: flex;
+    color: white;
+}
+
+.feature div {
+    margin-left: 10px;
+}
+
+.feature div p {
+    margin-top: 10px;
+}
+
+/*mouse*/
+.one {
+    top: 450px;
+    right: 30px;
+}
+
+/*headphone*/
+.two {
+    top: 150px;
+    left: 420px;
+}
+
+/*motherboard*/
+.three {
+    bottom: 450px;
+    left: 50px;
+}
+
+/*processor*/
+.four {
+    bottom: 100px;
+    left: 420px;
+}
+
+.mobile {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.controls {
+    position: absolute;
+    right: 150px;
+    top: 45%;
+    transform: translateY(-50px);
+    text-align: center;
+    margin: 10px;
+}
+
+.controls h4 {
+    margin: 10px 0;
+    color: #fff;
+}
+
+#arrow-up {
+    width: 30px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+#arrow-down {
+    width: 30px;
+    cursor: pointer;
+}
