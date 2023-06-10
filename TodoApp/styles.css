@@ -12,7 +12,11 @@ body {
     position: relative;
     background-color: #d9d35b;
 }
-
+.main-container {
+    position: center;
+    align-items: center;
+    justify-content: center;
+}
 .container {
     display: flex;
     gap: 50px;
@@ -51,4 +55,12 @@ i {
 #msg {
     color: red;
     margin: 10px;
+}
+
+.fa-trash-alt {
+    color: red;
+}
+
+.fa-edit {
+    color: #000b80;
 }

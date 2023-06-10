@@ -13,7 +13,6 @@ let formValidation = () => {
     if (input.value === '') {
         msg.innerHTML = "One of your fields is empty!!";
     } else {
-        console.log('form submitted');
         acceptData();
 
         msg.innerHTML = "";
@@ -32,9 +31,18 @@ let createPost = () => {
         <p>${data.text}</p>
         <span class="options">
             <i onclick="editPost(this)" class="fas fa-edit"></i>
-            <i onclick="deletPost(this)" class="fas fa-trash-alt"></i>
+            <i onclick="deletePost(this)" class="fas fa-trash-alt"></i>
         </span>
     </div>
     `;
     input.value = '';
+}
+
+let deletePost = (e) => {
+    e.parentElement.parentElement.remove();
+};
+
+let editPost = (e) => {
+    input.value = e.parentElement.previousElementSibling.innerHTML;
+    e.parentElement.parentElement.remove();
 }
