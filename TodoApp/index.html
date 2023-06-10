@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>ToDo app</title>
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
     <link href="bootstrap-css.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="all.min.css"/>
     <script src="fontawesome.js" crossorigin="anonymous"></script>
@@ -14,31 +15,67 @@
 </head>
 <body>
 
-<div class="main-container">
-    <h1>Create Todo App</h1>
-    <div class="container">
-        <div class="left">
-            <form id="form">
-                <label for="input">Write your post here</label>
-                <br>
-                <br>
-                <textarea name="post" id="input" cols="30" rows="10"></textarea>
-                <br>
-                <br>
-                <div id="msg"></div>
-                <button class="submit-btn" type="submit">Post</button>
-            </form>
-        </div>
+<div class="app">
+  <h4 class="mb-3">TODO App</h4>
 
-        <div class="right">
-            <h3>right Your posts here</h3>
-            <div id="posts">
+  <div id="addNew" data-bs-toggle="modal" data-bs-target="#form">
+    <span>Add New Task</span>
+    <i class="fas fa-plus"></i>
+  </div>
+
+    <h5 class="text-center my-3">Tasks</h5>
+    <div id="tasks">
+        <form
+                class="modal fade"
+                id="form"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+                        <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Task Title</p>
+                        <input type="text" class="form-control" name="" id="textInput"/>
+                        <div id="msg"></div>
+                        <br/>
+                        <p>Due Date</p>
+                        <input type="date" class="form-control" name="" id="dateInput"/>
+                        <br/>
+                        <p>Description</p>
+                        <textarea
+                                name=""
+                                class="form-control"
+                                id="textarea"
+                                cols="30"
+                                rows="5"
+                        ></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="submit" id="add" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
             </div>
-        </div>
+
+
+        </form>
     </div>
 </div>
 
 
 <script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="bundle.min.js"></script>
 </body>
 </html>

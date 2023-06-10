@@ -1,66 +1,64 @@
 body {
     font-family: sans-serif;
-    margin: 0 50px;
-}
-
-.right {
-    text-align: center;
-    background-color: #acffa9;
-}
-
-.left {
-    position: relative;
-    background-color: #d9d35b;
-}
-.main-container {
-    position: center;
-    align-items: center;
-    justify-content: center;
-}
-.container {
+    margin: 50px;
+    background-color: #e5e5e5;
+    overflow: hidden;
     display: flex;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#posts {
-    width: 400px;
+.app {
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+    border: 5px solid #abcea1;
+    border-radius: 8px;
+    padding: 15px;
 }
 
-i {
+#addNew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(85, 90, 224, 0.35);
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-#posts div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.fa-plus {
+    background-color: #abcea1;
+    padding: 3px;
+    border-radius: 3px;
 }
 
-.options {
+#msg {
+    color: red;
+}
+
+#tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+#tasks div {
+    border: 3px solid #abcea1;
+    background-color: #e2eede;
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+}
+
+#tasks div .options {
     justify-self: center;
     display: flex;
     gap: 20px;
 }
 
-.submit-btn {
-    border: 0;
-    background-color: #4fff4f;
-    border-radius: 10px;
-    padding: 10px;
-    width: 150px;
-    display: block;
-    margin: 0 auto;
-}
-
-#msg {
-    color: red;
-    margin: 10px;
-}
-
-.fa-trash-alt {
-    color: red;
-}
-
-.fa-edit {
-    color: #000b80;
+#tasks div .options i {
+    cursor: pointer;
 }
