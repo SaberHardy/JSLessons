@@ -235,7 +235,7 @@ section {
     gap: 20px;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
+    width: 80%;
 }
 
 .contact-inputs .fl-div {
@@ -273,15 +273,31 @@ textarea {
 }
 
 .submit-btn {
-    background-color: #0dcaf0;
+    background-color: #ffffff;
     border: 0;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 25px;
     display: block;
     margin: 0 auto;
 }
 
+.contact-icons {
+    /*background-color: white;*/
+    margin-top: 50px;
+    font-size: 30px;
+    width: 600px;
+}
+
+.contact-icons i {
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.contact-icons p {
+    color: white;
+}
 
 footer .footer-title {
     margin-bottom: 0;
