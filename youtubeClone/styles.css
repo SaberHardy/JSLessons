@@ -1,0 +1,157 @@
+@import url('../staticFiles/fontawsome');
+
+* {
+    /*font-family: 'Paytone One', sans-serif;*/
+    /*font-family: 'Poppins', sans-serif;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*scroll-behavior: smooth;*/
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', 'sans-serif';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-section img {
+    width: 100px;
+    padding-left: 10px;
+}
+
+.mid-section {
+    display: flex;
+    align-items: center;
+    margin-left: -90px;
+}
+
+.mid-section form {
+    display: flex;
+    width: 630px;
+    height: 40px;
+}
+
+.mid-section input {
+    width: 100%;
+    border-radius: 2px 0 0 2px;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+
+.mid-section button {
+    width: 80px;
+    border: 1px solid #d3d3d3;
+    border-radius: 0 2px 2px 0;
+    padding-top: 4px;
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+.mid-section button:hover {
+    border-color: #7e7e7e;
+    background-color: #7e7e7e;
+}
+
+
+.mid-section .fa-microphone {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.right-section a {
+    color: black;
+    font-size: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.content-area {
+    height: calc(100vh - 56px);
+    display: flex;
+    background: #e0e0e0;
+}
+
+aside {
+    height: 100%;
+    width: 280px;
+    background-color: #d7d7d7;
+    overflow-y: auto;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    /*The display flex default is row*/
+    flex-direction: column;
+    margin: 15px 0;
+    /*Add a padding for all the nav*/
+    padding-right: 15px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link span {
+    margin-left: 25px;
+    font-size: 1.4rem;
+    line-height: 2em;
+    /*font-weight: bold;*/
+    color: #030303;
+}
+
+.active {
+    background-color: #afafaf;
+}
+
+#active-span {
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+hr {
+    height: 1px;
+    margin: 10px 0;
+    border: none;
+}
+
+nav p {
+    font-size: 15px;
+    color: #606060;
+    font-weight: 600;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
