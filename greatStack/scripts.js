@@ -8,8 +8,10 @@ function toggleBtn() {
     light.classList.toggle('on');
 
     hero.classList.toggle('dark-mode');
-console.log(hero.classList)
-    if(hero.classList.contains('dark-mode')) {
-        he.style.color = '#0c0c0c';
+
+    if (hero.classList.contains('dark-mode')) {
+        he.style.color = '#000000';
+    } else {
+        he.style.color = '#ffffff';
     }
 }
