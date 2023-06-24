@@ -89,7 +89,7 @@ form {
     text-transform: capitalize;
 }
 
-.show-more {
+#show-more {
     padding: 10px 20px;
     background-color: #00cb71;
     border: none;
@@ -97,5 +97,5 @@ form {
     cursor: pointer;
     margin-left: 10px;
     text-align: center;
-    /*display: none;*/
+    display: none;
 }
