@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*background: url('https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') center center;*/
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(#4a8383, #9b9b63, #1c2748);
+    min-height: 100vh;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.quiz-header {
+    padding: 2rem;
+}
+
+.quiz-container {
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(100, 100, 100);
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul li {
+    font-size: 1.5rem;
+}
+
+.submit-answer {
+    background-color: #90ef90;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+.submit-answer:hover {
+    background-color: #74dccf;
+    cursor: pointer;
+}
