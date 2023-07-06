@@ -41,6 +41,10 @@ ul li {
     font-size: 1.5rem;
 }
 
+ul li label:hover {
+    cursor: pointer;
+}
+
 .submit-answer {
     background-color: #90ef90;
     padding: 10px;
