@@ -61,3 +61,21 @@ ul li label:hover {
     background-color: #74dccf;
     cursor: pointer;
 }
+
+#quiz {
+    padding: 20px;
+    font-size: 12px;
+}
+
+.red-color {
+    background-color: #ff4141;
+    font-weight: bold;
+}
+
+.red-color h2 {
+    color: white;
+}
+
+.green-color {
+    background-color: greenyellow;
+}
